@@ -1,7 +1,7 @@
-package main
+package higo
 
 import "fmt"
 
-func main() {
+func Show() {
 	fmt.Println("hi,go")
 }
