@@ -1,11 +1,16 @@
-package higo
+package main
 
-import "fmt"
+import (
+"fmt"
+"os"
+"runtime"
+)
 
-func Show() {
-	fmt.Println("hi,go")
-}
-
-func ShowV2() {
-	fmt.Println("hi,go V2")
+func main() {
+        fmt.Println("Hi,go")
+        fmt.Println(runtime.GOARCH)
+        name, err := os.Hostname()
+        if err == nil {
+                fmt.Println(name)
+        }
 }
