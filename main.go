@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-        fmt.Println("Hi,go")
+        fmt.Println("Hi,golang")
         fmt.Println(runtime.GOARCH)
         name, err := os.Hostname()
         if err == nil {
